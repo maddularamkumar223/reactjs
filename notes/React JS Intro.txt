@@ -1,0 +1,63 @@
+React JS
+
+It is a JS library.
+It is used to create a single-page application.
+
+1. Angular JS
+2. React   JS
+3. Vue     JS
+4. Backbone JS
+5. Ember JS
+
+It follows the component-based structure.
+It supports for jsx.
+It uses the virtual dom.
+
+History
+
+Jordan Walke
+The first name of the react js is faxjs
+In 2013 react js is open source
+
+Characteristics of React js
+
+1. component-based architecture 
+2. virtual dom
+3. declarative syntax
+4. uni-directional flow
+
+Advantages
+
+1. component-based architecture 
+2. virtual dom
+3. support
+
+Disadvantage
+1. seo
+
+Dom
+
+It is used to create a DOM tree
+If i will make any changes it will effect the DOM tree
+
+Virtual dom
+
+It is a copy on real dom. It will occupy the space.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

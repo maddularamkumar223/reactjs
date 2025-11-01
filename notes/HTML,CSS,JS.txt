@@ -1,0 +1,153 @@
+HTML,CSS,JS
+
+1. arrow function
+2. var let const 
+3. Destructuring
+4. Spread and Rest Operators(...)
+5. Modules
+6. Promises - Api handling
+7. higher-order function and callback function
+
+Arrow function
+
+It is known as syntactic sugar.
+
+Normal function Syntax
+
+function functionName([parametr]){//code}
+
+Arrow Function Syntax
+
+variable declaration identifier = ([p]) => {//code}
+identifier([a])
+
+1. If I have only one line of execution
+
+	let demo = () => clg("I am a demo function")
+
+2. If I don't have any parameters no need to use the parentheses apart from that we can use "$/_"
+
+	let demo1 = $ => clg('I am a demo1 function')
+
+3. If I have a only one parameter no need to pass the parentheses
+	let displayName = name => clg(name)
+
+implicit return
+	let displayName = name => name
+Explicit return
+
+	let data = (age) =>{
+
+		return age
+	}
+
+Higher-order Function
+
+The function that accepts another function as an argument, that function we will call it as a higher-order function.
+
+Callback function
+
+The function we are passing as an argument that function we will call it as a callback function.
+
+
+Destructuring
+
+let arr = ["clothes"," accessories", "footwear", "pillow", "mattress", "kettle"]
+
+
+let [a,b,c,d,e,f] = arr;
+
+let [clothes,,,,mattess] = arr;
+
+object destructuring({})
+
+let obj = {
+
+	key: value,
+	key: value
+}
+
+let details = {
+
+	name: "Ravi Chandra",
+	age: 30
+}
+
+clg(details.name)
+clg(details["age"])
+
+let {age} = details
+
+
+
+
+Rest and Spread(...)
+
+
+let arr = [1,2,3,4,5]
+let arr1 = [6,7,8,9,10]
+
+let [a,b,...c] = arr;
+clg(c) - [3,4,5]
+
+let arr2 = [...arr,...arr1]
+clg(arr2) - [1,2,3,4,5,6,7,8,9,10]
+
+
+Promise
+
+It is an object constructor.
+
+let myPromise = new Promise((res,rej) =>{
+	let study = true
+	if(study){
+		res("Promise Fullfiled")
+	}
+	else{
+		rej("Promise Rejected")
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,26 @@
+------------- Install React JS -----------
+
+1. Node js
+
+2. By using the npm we are installing the react js
+
+3. npm create vite@latest
+4. Project Name
+5. Select the framework as a react
+6. Select the variant as a JavaScript
+7. Experimental -NO
+8. Install npm -Y
+9. Copy the link and paste in the chrome tab and click enter you will get the react app
+
+How to create a react element
+
+React.createElement(type,attributes,content/children)
+
+
+
+
+
+
+
+
+  
