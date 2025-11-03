@@ -1,0 +1,65 @@
+JSX
+It is the combination of both html and js.
+It is a file extension.
+It is a structure for the JSX
+
+Rules of jsx
+
+1. Tags always contain closing tags
+2. className, htmlFor
+3. We should wrap same level of elements should be wrap in a parent
+
+
+React Fragments
+
+It act like parent for the elements which avoids the extra node us.
+ 
+1. <React.Fragment>
+		//code
+  </React.Fragment>
+
+2. <>
+	//code
+   </>
+
+Difference between first and second syntax is in the first syntax we can give a key attribute in second syntax it is not possible.
+
+JSX Expression
+
+1. The representation of the JSX expression is "{}".
+2. If we want to render dynamic data that we are using the jsx expression.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

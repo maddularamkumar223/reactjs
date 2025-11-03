@@ -1,0 +1,96 @@
+Components
+
+It is a core building block.
+We are combining all the components in a parent.
+Components are reusable.
+We can import and export the components.
+
+Component name starts with an uppercase letter.
+Component file extension should be .JSX.
+
+
+Types of components
+
+1. Class-Based Component.
+2. Function-Based Component.
+
+1. Class-Based Component
+
+	1. We should import React.
+	2. It follows inheritance where we are using the extends 	keyword.
+	3. We should use the render method to run the JSX.
+	4. It follows the es6 classes.
+
+Syntax:  class ComponentName extends React.component{
+	
+		constructor(){
+			super();
+		}
+		
+		render(){
+			//code
+		}
+	}
+	
+	export default Component Name;
+
+2. Function-Based Component
+
+	1. It is very easy compare to class based component
+	2. We need to return the JSX to display the data.
+	3. In this, we don't have a render method.
+	4. It doesn't have any life-cycle methods.
+
+	syntax : let Componentname = ()=>{
+		return{
+			//code
+		}
+	}
+	export default component Name;
+
+
+1. We need to create a root component with the name of App.jsx
+2. We can call the component in two ways.
+	1. Paired 
+
+		<ComponentName></Componentname>		
+
+	2. unpaired
+		
+		<Componentname/>
+3. You should import the components.
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
