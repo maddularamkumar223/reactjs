@@ -1,0 +1,12 @@
+Hooks
+
+Hooks are used in the function-based component.
+Hooks always start with "use".
+	Ex: useState(),useRef(), useContext()
+
+Rules of the hooks
+
+We always need to use it at the top level.
+We can't use the hooks In the looping statements.
+We should import the hooks.
+We need to call the hooks in the component only.

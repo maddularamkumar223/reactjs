@@ -1,0 +1,27 @@
+State
+
+It is a JS object.
+It represents the current position/situation of the component.
+It will be handled inside the component.
+It is mutable in nature.
+It is used to hold and store the data.
+It is storing the null or an object.
+
+
+In a class-based component, state is present internally.
+In a function-based component, state is not present
+
+
+If I want to update the state in the class based component
+we need to use the this.setState method 
+
+
+
+
+
+
+
+
+
+
+

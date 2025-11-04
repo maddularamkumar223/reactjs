@@ -1,0 +1,6 @@
+Props
+It is known as a property.
+It is used to transfer the data from one component to another component.
+It will return an object.
+It is a unidirectional flow.
+It is an immutable.
