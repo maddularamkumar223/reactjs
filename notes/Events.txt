@@ -1,0 +1,22 @@
+Events
+
+It is used to interact with the users.
+The events are the same in the JS also. 
+In react, we will call events as synthetic events.
+It is returning an object.
+
+1. In JS, we are using the event attributes with lowercase only onclick(), but in React JS we are using the camelCase onClick()
+2. In JS while we are using the events there we are invoking the function "onclick = "functionname()" but in react we will nor invoke the function "onClick = {functionName}.
+3. In JS to call the function, we will not use the curly brackets, but in react, to call function, we need to use the curly brackets.
+
+In react, we are creating the event handlers.
+
+
+
+
+
+
+
+
+
+ 
