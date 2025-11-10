@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "./Form";
 
+
 const Child = ({
   color,
   colorChange,
@@ -17,6 +18,7 @@ const Child = ({
       </h1>
       <button onClick={colorChange}>Click to change color</button>
       <Form handleSubmit={handleSubmit} />
+      <img src={Image1}/>
     </div>
   );
 };
