@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.complete {
+  background-color: navy;
+  color: white;
+}
+.incomplete {
+  background-color: red;
+  color: white;
+}
