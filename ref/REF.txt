@@ -1,0 +1,7 @@
+REF
+
+It is known as a reference.
+It will target real DOM nodes directly.
+It used to focus the input fields, handle the forms, and handle the multimedia things.
+
+We need to import the useRef and then connect with the element

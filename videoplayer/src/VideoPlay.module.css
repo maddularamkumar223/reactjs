@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    /* height: 100vh; */
+}
+article{
+    border: solid;
+}
+
+.singleVideo{
+    flex-basis: 70%;
+}
+.videos{
+    flex-basis: 30%;
+    video{
+        width: 100%;
+    }
+}
