@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.videoPlayer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.videoPlayer article:first-child {
+  height: 100vh;
+  border: solid red;
+  video {
+    height: 100%;
+    width: 100%;
+  }
+}
+.videoPlayer article:last-child {
+  video {
+    width: 100%;
+    height: 300px;
+  }
+}

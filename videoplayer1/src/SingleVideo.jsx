@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const SingleVideo = () => {
+const SingleVideo = ({ video, videoRef, handleClick }) => {
   return (
-    <div>SingleVideo</div>
-  )
-}
+    <>
+      <video src={video} ref={videoRef} onClick={handleClick}></video>
+    </>
+  );
+};
 
-export default SingleVideo
+export default SingleVideo;
