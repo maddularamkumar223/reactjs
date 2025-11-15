@@ -1,10 +1,10 @@
 import React from "react";
-import VideoPlay from "./VideoPlay";
+import VideoPlayer from "./VideoPlayer";
 
 const App = () => {
   return (
     <div>
-      <VideoPlay />
+      <VideoPlayer />
     </div>
   );
 };
