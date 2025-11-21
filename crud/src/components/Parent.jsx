@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import DisplayDetails from "./DisplayDetails";
+import { v4 as uuidv4 } from "uuid";
 
 const Parent = () => {
   let [details, setDetails] = useState({
+    id: uuidv4(),
     productName: "",
     productPrice: "",
     productDescription: "",
@@ -19,10 +21,22 @@ const Parent = () => {
     e.preventDefault();
     setDisplayData([...displayData, details]);
     setDetails({
+      id: uuidv4(),
       productName: "",
       productPrice: "",
       productDescription: "",
     });
+  };
+  console.log(displayData);
+  let updateProduct = (data) => {
+    setDetails(data);
+    let filterData = displayData.filter((value) => value.id != data.id);
+    setDisplayData(filterData);
+  };
+
+  let handleDelete = (data) => {
+    let filterData = displayData.filter((value) => value.id != data.id);
+    setDisplayData(filterData);
   };
   return (
     <section>
@@ -34,7 +48,11 @@ const Parent = () => {
         />
       </article>
       <article>
-        <DisplayDetails details={displayData} />
+        <DisplayDetails
+          details={displayData}
+          handleEdit={updateProduct}
+          handleDelete={handleDelete}
+        />
       </article>
     </section>
   );
