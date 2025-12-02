@@ -8,6 +8,8 @@ const ApiHandling = () => {
     name: "",
     user: [],
     loading: false,
+    editId: "",
+    isEdit: false,
   });
 
   // ! Fetch the api data
@@ -28,6 +30,35 @@ const ApiHandling = () => {
     setDetails({ ...details, loading: !details.loading, name: "" });
   };
 
+  // ! DeleteData
+  let deleteData = async (id) => {
+    await fetch(`http://localhost:3000/names/${id}`, {
+      method: "DELETE",
+    });
+    setDetails({ ...details, loading: !details.loading });
+  };
+
+  // ! Edit Data
+
+  let handleEdit = (data) => {
+    setDetails({ ...details, name: data.name, editId: data.id, isEdit: true });
+  };
+
+  let updateData = async (id, data) => {
+    await fetch(`http://localhost:3000/names/${id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ name: data }),
+    });
+    setDetails({
+      ...details,
+      loading: !details.loading,
+      name: "",
+      isEdit: false,
+    });
+  };
   //! handling api by using the useEffect
 
   useEffect(() => {
@@ -43,10 +74,10 @@ const ApiHandling = () => {
   //   ! Handle submit for the form
   let handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(details.name);
-    await addUser(details.name);
+    details.isEdit
+      ? await updateData(details.editId, details.name)
+      : await addUser(details.name);
   };
-  console.log(details);
   return (
     <div>
       <Form
@@ -54,7 +85,11 @@ const ApiHandling = () => {
         handleSubmit={handleSubmit}
         name={details.name}
       />
-      <DataDisplay user={details.user} />
+      <DataDisplay
+        user={details.user}
+        deleteData={deleteData}
+        handleEdit={handleEdit}
+      />
     </div>
   );
 };

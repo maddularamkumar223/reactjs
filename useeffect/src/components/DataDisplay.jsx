@@ -1,14 +1,14 @@
 import React from "react";
 
-const DataDisplay = ({ user }) => {
+const DataDisplay = ({ user, deleteData, handleEdit }) => {
   return (
     <div>
       {user.map((userData) => {
         return (
           <>
             <p>{userData.name}</p>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button onClick={() => handleEdit(userData)}>Edit</button>
+            <button onClick={() => deleteData(userData.id)}>Delete</button>
           </>
         );
       })}
