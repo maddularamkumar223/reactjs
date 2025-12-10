@@ -1,0 +1,26 @@
+Routing
+
+It is used to render from one webpage to another webpage without reload the page.
+
+The routing is not supported by the react library so we need to install one dependices
+
+react-router-dom 
+
+Three parameters are imp
+ 
+1. BrowserRouter : All the components should be wrap inside the Browser Router.
+
+2. Switch: It will compare the values if it match it stops there only.
+
+3. Route: Inside this we are creating the paths.
+	   It has two attributes
+		1. path
+		2. component
+
+
+How to access the path
+	To access path we need to use the Link/NavLink which is present inside the react-router-dom.
+
+
+
+

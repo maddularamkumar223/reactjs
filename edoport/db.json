@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "id": "ca07",
+      "name": "Ram",
+      "email": "ram@gmail.com",
+      "dob": "12/12/1221",
+      "password": "123456",
+      "contact": "123456789",
+      "gender": "Male",
+      "address": "hgvhg"
+    },
+    {
+      "id": "207f",
+      "name": "Ravi",
+      "email": "ravi@gmail.com",
+      "dob": "25/12/2025",
+      "password": "1234567890",
+      "contact": "1234567890",
+      "gender": "Male",
+      "address": "safadsfa"
+    }
+  ]
+}
