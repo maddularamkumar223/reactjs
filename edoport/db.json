@@ -20,5 +20,31 @@
       "gender": "Male",
       "address": "safadsfa"
     }
+  ],
+  "courses": [
+    {
+      "id": "5699",
+      "courseName": "",
+      "price": "",
+      "duration": "",
+      "technology": "",
+      "trainerName": ""
+    },
+    {
+      "id": "8763",
+      "courseName": "Java Full Stack",
+      "price": "20000",
+      "duration": "6",
+      "technology": "Java",
+      "trainerName": "Naveen"
+    },
+    {
+      "id": "e09c",
+      "courseName": "Python Full Stack",
+      "price": "20000",
+      "duration": "6",
+      "technology": "Python",
+      "trainerName": "Ravi"
+    }
   ]
 }
