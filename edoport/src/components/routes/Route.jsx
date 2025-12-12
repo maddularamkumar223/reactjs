@@ -43,7 +43,7 @@ let route = createBrowserRouter([
         element: <SingleCourse />,
       },
       {
-        path: "/singleTrainer",
+        path: "/singleTrainer/:id",
         element: <SingleTrainer />,
       },
     ],
