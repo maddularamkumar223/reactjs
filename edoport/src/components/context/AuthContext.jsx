@@ -26,13 +26,16 @@ let AuthProvider = ({ children }) => {
     if (data) {
       alert("Login Successful");
       setUsersData({ ...usersData, isLogin: true });
+      sessionStorage.setItem("id", data.id);
     } else {
       alert("Invalid Credentials");
     }
   };
-
+  let userId = sessionStorage.getItem("id");
   return (
-    <authContext.Provider value={{ addUser, fetchUsers, validate, isLogin }}>
+    <authContext.Provider
+      value={{ addUser, fetchUsers, validate, isLogin, userId }}
+    >
       {children}
     </authContext.Provider>
   );

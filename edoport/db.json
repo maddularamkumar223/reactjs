@@ -46,5 +46,23 @@
       "technology": "Python",
       "trainerName": "Ravi"
     }
+  ],
+  "trainers": [
+    {
+      "id": "adc7",
+      "trainerName": "Naveen",
+      "experience": "10",
+      "technologies": "React js",
+      "email": "naveen@gmail.com",
+      "contact": "1234567890"
+    },
+    {
+      "id": "9c88",
+      "trainerName": "Ravi",
+      "experience": "15",
+      "technologies": "Java",
+      "email": "ravi@gmail.com",
+      "contact": "1234567890"
+    }
   ]
 }
