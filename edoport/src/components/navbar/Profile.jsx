@@ -46,6 +46,7 @@ const Profile = () => {
 
   let removeId = () => {
     sessionStorage.removeItem("id");
+    sessionStorage.removeItem("role");
     navigate("/login");
   };
   useEffect(() => {
