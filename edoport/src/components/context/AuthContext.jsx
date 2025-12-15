@@ -27,14 +27,16 @@ let AuthProvider = ({ children }) => {
       alert("Login Successful");
       setUsersData({ ...usersData, isLogin: true });
       sessionStorage.setItem("id", data.id);
+      sessionStorage.setItem("role", data.role);
     } else {
       alert("Invalid Credentials");
     }
   };
   let userId = sessionStorage.getItem("id");
+  let role = sessionStorage.getItem("role");
   return (
     <authContext.Provider
-      value={{ addUser, fetchUsers, validate, isLogin, userId }}
+      value={{ addUser, fetchUsers, validate, isLogin, userId, role }}
     >
       {children}
     </authContext.Provider>

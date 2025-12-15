@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import CreateNavbar from "./CreateNavbar";
+import { authContext } from "../context/AuthContext";
 
 const Navigation = () => {
+  let { role } = useContext(authContext);
   let navData = [
     {
       name: "Home",
@@ -25,9 +27,29 @@ const Navigation = () => {
       path: "/createTrainer",
     },
   ];
+
+  let navData1 = [
+    {
+      name: "Home",
+      path: "#",
+    },
+    {
+      name: "Courses",
+      path: "/displayCourse",
+    },
+    {
+      name: "Trainers",
+      path: "/displayTrainers",
+    },
+  ];
+
   return (
     <section>
-      <CreateNavbar data={navData} />
+      {role === "admin" ? (
+        <CreateNavbar data={navData} />
+      ) : (
+        <CreateNavbar data={navData1} />
+      )}
     </section>
   );
 };

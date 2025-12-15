@@ -8,6 +8,7 @@ import DisplayCourses from "./../courses/DisplayCourses";
 import DisplayTrainer from "./../trainers/DisplayTrainer";
 import SingleCourse from "./../courses/SingleCourse";
 import SingleTrainer from "./../trainers/SingleTrainer";
+import { protectedRoutes } from "../utilities/protectedRoutes";
 
 let route = createBrowserRouter([
   {
@@ -25,10 +26,12 @@ let route = createBrowserRouter([
       {
         path: "/createTrainer",
         element: <CreateTriner />,
+        loader: protectedRoutes,
       },
       {
         path: "/createCourse",
         element: <CreateCourse />,
+        loader: protectedRoutes,
       },
       {
         path: "/displayCourse",
@@ -41,10 +44,12 @@ let route = createBrowserRouter([
       {
         path: "/singleCourse/:id",
         element: <SingleCourse />,
+        loader: protectedRoutes,
       },
       {
         path: "/singleTrainer/:id",
         element: <SingleTrainer />,
+        loader: protectedRoutes,
       },
     ],
   },

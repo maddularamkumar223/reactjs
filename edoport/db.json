@@ -8,7 +8,8 @@
       "password": "123456",
       "contact": "123456789",
       "gender": "Male",
-      "address": "hgvhg"
+      "address": "hgvhg",
+      "role": "admin"
     },
     {
       "id": "207f",
@@ -18,7 +19,8 @@
       "password": "1234567890",
       "contact": "1234567890",
       "gender": "Male",
-      "address": "safadsfa"
+      "address": "safadsfa",
+      "role": "user"
     }
   ],
   "courses": [
@@ -63,6 +65,14 @@
       "technologies": "Java",
       "email": "ravi@gmail.com",
       "contact": "1234567890"
+    },
+    {
+      "id": "7d95",
+      "trainerName": "",
+      "experience": "",
+      "technologies": "",
+      "email": "",
+      "contact": ""
     }
   ]
 }

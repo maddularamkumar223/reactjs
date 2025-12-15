@@ -12,6 +12,7 @@ const Register = () => {
     contact: "",
     gender: "",
     address: "",
+    role: "user",
   });
 
   let { addUser } = useContext(authContext);
