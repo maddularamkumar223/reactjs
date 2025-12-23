@@ -1,95 +1,25 @@
 {
   "products": [
     {
-      "id": "3e09",
-      "productName": "Laptop",
-      "price": "20000",
-      "description": "I5",
-      "quantity": "20"
-    },
-    {
-      "id": "a244",
-      "productName": "Mobile",
-      "price": "20000",
-      "description": "It is a good Mobile",
-      "quantity": "20"
-    },
-    {
-      "id": "7fa2",
       "productName": "Watch",
-      "price": "5000",
-      "description": "LKjhgfdghjkl",
-      "quantity": "50"
+      "price": "2500",
+      "description": "dfss",
+      "quantity": "15",
+      "id": "8792"
     },
     {
-      "id": "40df",
+      "productName": "Mobile",
+      "price": "25000",
+      "description": "sdfsdfasd",
+      "quantity": "10",
+      "id": "91d4"
+    },
+    {
       "productName": "Tshirt",
-      "price": "20",
-      "description": "sdfasdfsf",
-      "quantity": "20"
-    },
-    {
-      "id": "f70e",
-      "productName": "Shirt",
-      "price": "3000",
-      "description": "Slim fit",
-      "quantity": "20"
-    },
-    {
-      "id": "bf94",
-      "productName": "",
-      "price": "",
-      "description": "",
-      "quantity": ""
-    },
-    {
-      "id": "da04",
-      "productName": "ewqrewqr",
-      "price": "25",
-      "description": "werqwe",
-      "quantity": "1"
-    },
-    {
-      "id": "5c18",
-      "productName": "",
-      "price": "",
-      "description": "",
-      "quantity": ""
-    },
-    {
-      "id": "a009",
-      "productName": "dsfsfsfdsasfaasdfadssdfsda",
-      "price": "256",
-      "description": "asdfasdf",
-      "quantity": "652"
-    },
-    {
-      "id": "795a",
-      "productName": "",
-      "price": "",
-      "description": "",
-      "quantity": ""
-    },
-    {
-      "id": "88d7",
-      "productName": "",
-      "price": "",
-      "description": "",
-      "quantity": ""
-    },
-    {
-      "id": "a408",
-      "productName": "",
-      "price": "",
-      "description": "",
-      "quantity": ""
-    },
-    {
-      "id": "2ecc",
-      "productName": "",
-      "price": "",
-      "description": "",
-      "quantity": ""
+      "price": "2500",
+      "description": "sdda",
+      "quantity": "25",
+      "id": "9dff"
     }
   ]
 }
