@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { addProduct, fetchProducts } from "../redux/product/productThunkApi";
+import {
+  addProduct,
+  deleteProductData,
+  editProductData,
+  fetchProducts,
+} from "../redux/product/productThunkApi";
 import { useDispatch, useSelector } from "react-redux";
+import { updateSingleProduct } from "../redux/product/productApiSlice";
 
 const ApiDataDisplaying = () => {
   let [productDetails, setProductDetails] = useState({
@@ -11,11 +17,13 @@ const ApiDataDisplaying = () => {
   });
   let { productName, price, quantity, description } = productDetails;
 
+  let singleProduct = useSelector(
+    (state) => state.productApiStore.singleProduct
+  );
+
+  let isEdit = useSelector((state) => state.productApiStore.isEdit);
   let dispatch = useDispatch();
-  let errorMessage = useSelector((state) => state.productApiStore.error);
-  let pendingMessage = useSelector((state) => state.productApiStore.pending);
   let productsData = useSelector((state) => state.productApiStore.productsList);
-  console.log(productsData);
 
   let handleChange = (e) => {
     let { name, value } = e.target;
@@ -24,7 +32,13 @@ const ApiDataDisplaying = () => {
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addProduct(productDetails));
+    if (isEdit) {
+      dispatch(
+        editProductData({ id: singleProduct.id, product: productDetails })
+      );
+    } else {
+      dispatch(addProduct(productDetails));
+    }
     console.log("Form Submitted");
     setProductDetails({
       productName: "",
@@ -32,12 +46,20 @@ const ApiDataDisplaying = () => {
       description: "",
       quantity: "",
     });
-    console.log(errorMessage);
-    console.log(pendingMessage);
   };
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
+
+  useEffect(() => {
+    singleProduct &&
+      setProductDetails({
+        productName: singleProduct.productName,
+        price: singleProduct.price,
+        description: singleProduct.description,
+        quantity: singleProduct.quantity,
+      });
+  }, [singleProduct]);
   return (
     <div>
       <form action="" onSubmit={handleSubmit}>
@@ -94,8 +116,12 @@ const ApiDataDisplaying = () => {
               <p>Product Price: {product.price}</p>
               <p>Product Quantity: {product.quantity}</p>
               <p>Product Description: {product.description}</p>
-              <button>Edit</button>
-              <button>Delete</button>
+              <button onClick={() => dispatch(updateSingleProduct(product.id))}>
+                Edit
+              </button>
+              <button onClick={() => dispatch(deleteProductData(product.id))}>
+                Delete
+              </button>
             </article>
           );
         })}
